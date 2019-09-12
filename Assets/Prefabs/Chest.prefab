@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3661967551756736494}
   - component: {fileID: 5112549413334515258}
   - component: {fileID: 2586052160320617416}
+  - component: {fileID: 3619454403969672859}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Chest
@@ -128,3 +129,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3619454403969672859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8629732827701662918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eca15c089ed446c5be89a7f8929a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPack: {fileID: 550850835966512371, guid: a808f34e8f50445f985f4a7160a83cc8,
+    type: 3}

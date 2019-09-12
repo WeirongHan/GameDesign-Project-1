@@ -67,9 +67,14 @@ public class PlayerController : MonoBehaviour
     		attackTimer -= Time.deltaTime;
     	}
 
-        if(Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             Interact();
+        }
+        if (playerRB.position[0] >= -18.5234 && playerRB.position[0] <= -16.92339 && playerRB.position[1] >= 4.298676)
+        {
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().WinGame();
         }
     }
     #endregion
@@ -109,6 +114,7 @@ public class PlayerController : MonoBehaviour
     	//Set Animator Direction Values
     	anim.SetFloat("DirX", currDirection.x);
     	anim.SetFloat("DirY", currDirection.y);
+
 
     }
     #endregion
